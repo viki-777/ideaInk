@@ -1,6 +1,7 @@
 import { Afacad_Flux } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
+import Header from "@/components/Header";
 
 const Afacad =  Afacad_Flux({
   
@@ -22,6 +23,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${Afacad.className} `}
       >
+      <Header />
       <Toaster  />
         {children}
       </body>

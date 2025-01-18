@@ -3,8 +3,14 @@
 @tailwind utilities;
 
 body {
- background-color: #202020;
+ background-color: #110d03;
 }
+
+
+
+
+
+
 
 
 
@@ -64,6 +70,12 @@ body {
     --chart-5: 340 75% 55%;
   }
 }
+
+
+
+
+
+
 
 
 
