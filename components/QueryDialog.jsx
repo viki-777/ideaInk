@@ -35,7 +35,7 @@ export const QueryDialog = ({ queryDialog, setQueryDialog }) => {
     }
 
     const generateBusinessName = ()=>{
-          router.push('/business-name')
+          router.push('/business')
     }
 
     return (
