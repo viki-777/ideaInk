@@ -1,15 +1,15 @@
-import { Afacad_Flux } from "next/font/google";
+import { Afacad_Flux } from 'next/font/google'
 import "./globals.css";
-import { Toaster } from "@/components/ui/toaster";
-import Header from "@/components/Header";
 
-const Afacad =  Afacad_Flux({
-  
-  subsets: ["latin"],
-  weight: ['400', '500', '600', '700','800', '900'],
-  display: "swap",
-});
+import { Toaster } from "@/components/ui/toaster"
+import { BusinessNameContext } from '@/context/BusinessNameContext';
+import Header from '@/components/Header';
 
+const Afacad = Afacad_Flux({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700', '800', '900'],
+  display: 'swap'
+})
 
 
 export const metadata = {
@@ -21,11 +21,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${Afacad.className} `}
+        className={`${Afacad.className}`}
       >
-      <Header />
-      <Toaster  />
-        {children}
+        <BusinessNameContext>
+          <Header/>
+          <Toaster />
+          {children}
+        </BusinessNameContext>
       </body>
     </html>
   );

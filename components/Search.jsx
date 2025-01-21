@@ -3,12 +3,12 @@ import React, { useState } from 'react'
 import { Input } from './ui/input'
 import { Button } from './ui/button'
 import { toast } from '@/hooks/use-toast'
-
-// import { QueryDialog } from './QueryDialog'
+import { QueryDialog } from './QueryDialog'
 import { useQueryContext } from '@/context/BusinessNameContext'
-import { Hammer, Cog } from 'lucide-react'
+
 
 const Search = () => {
+    const { query, updateQuery } = useQueryContext()
     
 
     const [keyword, setKeyword] = useState()
@@ -25,7 +25,7 @@ const Search = () => {
             })
         }
 
-        updateQuery({ keyword })
+        updateQuery({keyword} )
 
         setQueryDialog(!queryDialog)
 
@@ -34,12 +34,10 @@ const Search = () => {
     return (
         <div className='flex justify-center items-center pt-5'>
             <div className='w-[600px] flex items-center gap-5'>
-                <Input onChange={handleKeyword} placeholder="Enter keyword..." className="h-14 text-white md:text-md border-primary rounded-full" />
-                <Button onClick={showQueryDialog} className="h-14 rounded-full text-lg px-5">
-                 <Cog className="hover:scale-150" size={100} /> 
-                </Button>
+                <Input onChange={handleKeyword} placeholder="Enter keyword..." className="h-14 text-white md:text-md border-primary" />
+                <Button onClick={showQueryDialog} className="h-14 text-lg px-5">Generate</Button>
             </div>
-            
+            <QueryDialog queryDialog={queryDialog} setQueryDialog={setQueryDialog} keyword={keyword} />
         </div>
     )
 }

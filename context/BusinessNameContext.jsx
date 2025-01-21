@@ -7,9 +7,7 @@ export const BusinessNameContext = ({ children }) => {
         if (typeof window !== 'undefined') {
             const sessionQuery = sessionStorage.getItem('query')
             if (sessionQuery) return JSON.parse(sessionQuery)
-        } else {
-            return {}
-        }
+        } 
     })
 
     const updateQuery = (newQuery) => {
