@@ -7,6 +7,7 @@ import { QueryDialog } from './QueryDialog'
 import { useQueryContext } from '@/context/BusinessNameContext'
 
 
+
 const Search = () => {
     const { query, updateQuery } = useQueryContext()
     
@@ -34,7 +35,7 @@ const Search = () => {
     return (
         <div className='flex justify-center items-center pt-5'>
             <div className='w-[600px] flex items-center gap-5'>
-                <Input onChange={handleKeyword} placeholder="Enter keyword..." className="h-14 text-white md:text-md border-primary" />
+                <Input onChange={handleKeyword} placeholder="Enter keyword..." className="h-14 text-black md:text-md border-primary" />
                 <Button onClick={showQueryDialog} className="h-14 text-lg px-5">Generate</Button>
             </div>
             <QueryDialog queryDialog={queryDialog} setQueryDialog={setQueryDialog} keyword={keyword} />

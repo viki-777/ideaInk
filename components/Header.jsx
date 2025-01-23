@@ -2,6 +2,7 @@ import { Lightbulb } from 'lucide-react'
 import Link from 'next/link'
 import React from 'react'
 
+
 const Header = () => {
   return (
     <div className='fixed top-0 left-0 w-full bg-cblack flex justify-between md:px-56 px-5 md:py-8 py-5'>
@@ -19,6 +20,7 @@ const Header = () => {
             
             
             <a className='md:text-xl text-lg font-semibold text-primary'>Contact</a>
+            
             
         </div>
         

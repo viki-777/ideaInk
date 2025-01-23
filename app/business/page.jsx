@@ -1,5 +1,5 @@
 'use client'
-
+import DomainStatus from '@/components/DomainStatus'
 import Sidebar from '@/components/Sidebar'
 import { useQueryContext } from '@/context/BusinessNameContext'
 import { generatePrompt } from '@/helpers/function'
@@ -108,7 +108,7 @@ const BusinessName = () => {
                 </div>
             </div>
 
-            
+            <DomainStatus open={domainDialogOpen} setOpen={setDomainDialogOpen} domain={domain} />
 
         </div>
     )
