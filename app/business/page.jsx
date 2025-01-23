@@ -85,7 +85,7 @@ const BusinessName = () => {
 
     return (
         <div className='md:px-20 px-5 mb-10'>
-            <h1 className='mt-32 text-4xl text-white font-semibold text-center border-b pb-10 border-gray-500'>Business Name</h1>
+            <h1 className='mt-32 text-4xl text-black font-semibold text-center border-b pb-10 border-gray-500'>Business Name</h1>
 
             <div className='md:flex justify-center items-start gap-10 mt-10' >
                 <div className='md:w-[25%] md:mb-0 mb-5'>
@@ -95,7 +95,7 @@ const BusinessName = () => {
                     <div className='grid md:grid-cols-4 grid-cols-2 gap-10'>
                         {names && names.length > 0 && names.map((singleName, index) => {
                             return (
-                                <div onClick={() => getDomainStatus(singleName)} key={index} className='border border-gray-600 rounded p-4 cursor-pointer text-white hover:bg-primary hover:text-black'>
+                                <div onClick={() => getDomainStatus(singleName)} key={index} className='border border-gray-300 rounded p-4 cursor-pointer text-black hover:bg-violet-300 hover:text-black'>
                                     {singleName}
                                 </div>
                             )

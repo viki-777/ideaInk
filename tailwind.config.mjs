@@ -49,7 +49,7 @@ export default {
   				'4': 'hsl(var(--chart-4))',
   				'5': 'hsl(var(--chart-5))'
   			},
-			cblack:'#110d03'
+			cblack:'#e9ecef'
   		},
   		borderRadius: {
   			lg: 'var(--radius)',

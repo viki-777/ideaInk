@@ -59,13 +59,13 @@ const DomainStatus = ({ open, setOpen, domain }) => {
                             <p className='mb-3 text-center'>Availability status of domain: <b>{domain}</b></p>
                             {domainStatus && domainStatus === 'AVAILABLE' ?
                                 <div className='flex justify-center'>
-                                    <span className='bg-green-500 text-xl px-10 text-white rounded py-3'>
+                                    <span className='bg-green-500 text-xl px-10 text-black rounded py-3'>
                                         {domainStatus}
                                     </span>
                                 </div>
                                 :
                                 <div className='flex justify-center'>
-                                    <span className='bg-red-500 text-xl px-10 text-white rounded py-3'>
+                                    <span className='bg-red-500 text-xl px-10 text-black rounded py-3'>
                                         {domainStatus}
                                     </span>
                                 </div>

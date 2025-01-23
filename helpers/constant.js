@@ -11,8 +11,8 @@ export const nameStyle = [
     },
     {
       id: 3,
-      name: "Evocative",
-      description: "like RedBull and Forever21",
+      name: "Sanskrit inspired",
+      description: "like Tejas and Chaitanya",
     },
     {
       id: 4,
@@ -21,8 +21,8 @@ export const nameStyle = [
     },
     {
       id: 5,
-      name: "Compound Words",
-      description: "like FedEx and Microsoft",
+      name: "Hindi inspired",
+      description: "like patanjali and aastha",
     },
     {
       id: 6,
