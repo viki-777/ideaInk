@@ -45,9 +45,12 @@ export default function Home() {
           </p>
         </div>
       </div>
-
+      
+    <div>
+      <Footer />
     </div>
-    <Footer />
+    </div>
+    
     </div>
   );
 }
